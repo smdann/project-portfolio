@@ -1,26 +1,28 @@
 import {
-  ChakraProvider,
   Box,
   Text,
-  theme,
 } from '@chakra-ui/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
+import Navigation from './components/Navigation';
+import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
+    <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+    minBreakpoint="xxs">
       <Box>
-        <Header />
+        
       </Box>
     
+      <Navigation />
+
       <Box textAlign="center" fontSize="xl">
         <Text>
-          Shannon Dann
+          
         </Text>
       </Box>
 
-    </ChakraProvider>
+    </ThemeProvider>
   );
 }
 
