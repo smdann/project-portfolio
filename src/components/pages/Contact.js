@@ -1,21 +1,50 @@
+import Form from 'react-bootstrap/Form';
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBRow,
+  MDBCol,
+  MDBBtn
+} from 'mdb-react-ui-kit';
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-    </div>
+    
+      
+      <MDBRow>
+        <br />
+        <MDBCol className="d-flex align-items-center justify-content-center">
+          <MDBCard className="shadow-5 w-50 mt-4">
+            <MDBCardBody>
+              <MDBCardTitle>Please feel free to contact me by submitting this form.</MDBCardTitle>
+              <MDBCardText>
+                <Form>
+                <Form.Group className="mb-3" controlId="formGroupName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter name" />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formGroupEmail">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control as="textarea" rows={6} placeholder="Enter a message" />
+                </Form.Group>
+                <MDBBtn type="button" class="btn btn-outline-secondary btn-rounded" data-mdb-ripple-color="dark">Submit</MDBBtn>
+                </Form>
+              </MDBCardText>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+        <br />
+      </MDBRow>
+      
+    
   );
 }
+

@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Header({ currentPage, handlePageChange }) {
   return (
+    
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -33,7 +34,6 @@ function Header({ currentPage, handlePageChange }) {
               onClick={() => handlePageChange('Resume')}
               className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
             >Resume</Nav.Link>
-
           </Nav>
         </Navbar.Collapse>
       </Container>
