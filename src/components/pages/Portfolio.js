@@ -68,7 +68,7 @@ export default function Portfolio() {
           </Col>
         ))}
       </Row>
-      <p className='pb-5'>Thank you for visiting my portfolio!</p>
+      <h3 className='pb-5'>Thank you for visiting my portfolio!</h3>
     </Container>
   );
 }

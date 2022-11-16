@@ -7,8 +7,9 @@ import { validateEmail } from './utils/helpers';
 export default function Contact() {
 
   // Puts the form fields and error message into state
-  const [formState, setFormState] = useState({ name: "", email: "", message: "" });
-  const { name, email, message } = formState;
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
   const [errorMessage, setErrorMessage] = useState('');
 
   // Handles changes to the input fields
@@ -16,8 +17,23 @@ export default function Contact() {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
+    
+    if (inputType === 'name') {
+      setName(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
 
-    if ( inputType === 'email' ) {
+  // Handles clicking out of form field without entering text
+  const handleClickingOut = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+      if ( inputType === 'email' ) {
       const valid = validateEmail(inputValue);
 
       if (!valid) {
@@ -32,13 +48,9 @@ export default function Contact() {
       } else {
         setErrorMessage('');
       }
-
-    if (!errorMessage) {
-      setFormState({ ...formState, inputType: inputValue })
-    }
-  };
-};
-
+    };
+  }
+  
   // Handles submission of the form
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -62,7 +74,9 @@ export default function Contact() {
     }
     
     // Clears out form field data after successful form submission
-    setFormState('');
+    setName('');
+    setEmail('');
+    setMessage('');
   };
 
   return (
@@ -78,17 +92,18 @@ export default function Contact() {
                 <Form.Control
                   value={name}
                   name="name"
-                  onBlur={handleInputChange}
+                  onChange={handleInputChange}
+                  onBlur={handleClickingOut}
                   type="text"
                   placeholder="Name"
-                  required
                 />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                 <Form.Control
                   value={email}
                   name="email"
-                  onBlur={handleInputChange}
+                  onChange={handleInputChange}
+                  onBlur={handleClickingOut}
                   type="email"
                   placeholder="Email"
                 />
@@ -97,12 +112,13 @@ export default function Contact() {
                 <Form.Control
                   value={message}
                   name="message"
-                  onBlur={handleInputChange}
+                  onChange={handleInputChange}
+                  onBlur={handleClickingOut}
                   as="textarea" rows={6}
                   placeholder="Message"
                 />
                 </Form.Group>
-                <MDBBtn type="button" onClick={handleFormSubmit} class="btn btn-outline-secondary btn-rounded">Submit</MDBBtn>
+                <MDBBtn type="button" onClick={handleFormSubmit} className="btn btn btn-rounded">Submit</MDBBtn>
               </Form>
               </MDBCardText>
             </MDBCardBody>
@@ -112,7 +128,7 @@ export default function Contact() {
         <div className='text-center'>
           {errorMessage && (
             <div>
-              <p className="error-text">{errorMessage}</p>
+              <h4 className="error-text">{errorMessage}</h4>
             </div>
           )}
         </div>

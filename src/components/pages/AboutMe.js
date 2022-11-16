@@ -15,9 +15,9 @@ export default function About() {
           <MDBCard className="shadow-5 w-50 mt-4" >
             <MDBCardBody>
               <MDBCardText>
-                <p>
+                <h3>
                   Welcome to my portfolio, where I showcase my projects and let you get a sense of who I am. While I have a couple of years worth of experience in web / mobile configuration and graphic design for a family-run business, I recently started on the path to becoming a full stack web developer. 
-                </p>
+                </h3>
               </MDBCardText>
               <MDBAccordion  initialActive={1}>
                 <MDBAccordionItem collapseId={1} headerTitle={<><MDBIcon fas icon="fas fa-laptop-code" /> &nbsp; Technical</>}>
@@ -38,9 +38,9 @@ export default function About() {
         <br />
       </MDBRow>
 
-      <p className="d-flex align-items-center justify-content-center p-5">
+      <h4 className="d-flex align-items-center justify-content-center p-5">
       Welcome to my portfolio, where I showcase my projects and let you get a sense of who I am. While I have a couple of years worth of experience in web / mobile configuration and graphic design for a family-run business, I recently started on the path to becoming a full stack web developer.
-      </p>
+      </h4>
     </div>
   );
 };
