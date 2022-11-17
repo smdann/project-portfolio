@@ -59,7 +59,8 @@ export default function Portfolio() {
   return (
     <Container>
       <h1 className="portfolio-header">Project Portfolio</h1>
-      <h2>Here are some of my favorite projects I've worked on.</h2>
+      <h4>Here are some of my favorite projects I've worked on so far.</h4>
+      <p>Visit the links to view the live website or GitHub repository.</p>
       <br />
       <Row>
         {projectData.map((project) => (
@@ -68,7 +69,7 @@ export default function Portfolio() {
           </Col>
         ))}
       </Row>
-      <h3 className='pb-5'>Thank you for visiting my portfolio!</h3>
+      <br/>
     </Container>
   );
 }

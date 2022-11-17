@@ -1,0 +1,54 @@
+/* Top Banner */
+#banner {
+  background-image: url('../images/portfolio-banner.png');
+  max-width: 100%;
+  height: auto;
+}
+
+#banner-text {
+  color: white;
+}
+
+/* Page Rendering Section */
+.page-area {
+  padding: 2rem;
+}
+
+/* About Me Page */
+#about-section {
+  margin: 2rem;
+}
+
+#welcome-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-card {
+  margin-bottom: 1rem;
+  border: 0;
+}
+
+.about-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.about-mini-cards {
+  display: flex;
+  text-align: center;
+}
+
+/* Portfolio Page */
+.project-card {
+  border: 0;
+}
+
+.portfolio-icons {
+  padding: 1rem;
+}
+
+/* Contact Page */
+#contact-card {
+  border: 0
+}

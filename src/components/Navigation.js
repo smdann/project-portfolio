@@ -27,7 +27,9 @@ export default function Navigation() {
   return (
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      <div className='page-area'>
+        {renderPage()}
+      </div>
     </div>
   );
 }

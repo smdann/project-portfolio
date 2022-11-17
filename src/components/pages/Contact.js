@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBBtn } from 'mdb-react-ui-kit';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import { validateEmail } from './utils/helpers';
 
 export default function Contact() {
@@ -72,66 +75,76 @@ export default function Contact() {
       setErrorMessage('Please enter a message.');
       return;
     }
-    
-    // Clears out form field data after successful form submission
-    setName('');
-    setEmail('');
-    setMessage('');
+    // Displays a message if all fields are valid upon submission
+    if (name && email && message) {
+      setErrorMessage(`Thank you for your inquiry, ${name}!`);
+
+      // Clears out form field data after successful form submission
+      setName('');
+      setEmail('');
+      setMessage('');
+      return;
+    }
   };
 
   return (
     <Container>
-    <MDBRow>
-      <MDBCol className="d-flex align-items-center justify-content-center">
-        <MDBCard className="shadow-5 w-50 mt-4">
-          <MDBCardBody>
-            <MDBCardTitle>Please feel free to contact me by submitting some information below.</MDBCardTitle>
-              <MDBCardText>
-              <Form className="form">
-                <Form.Group className="mb-3" controlId="formGroupName">
-                <Form.Control
-                  value={name}
-                  name="name"
-                  onChange={handleInputChange}
-                  onBlur={handleClickingOut}
-                  type="text"
-                  placeholder="Name"
-                />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formGroupEmail">
-                <Form.Control
-                  value={email}
-                  name="email"
-                  onChange={handleInputChange}
-                  onBlur={handleClickingOut}
-                  type="email"
-                  placeholder="Email"
-                />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formGroupMessage">
-                <Form.Control
-                  value={message}
-                  name="message"
-                  onChange={handleInputChange}
-                  onBlur={handleClickingOut}
-                  as="textarea" rows={6}
-                  placeholder="Message"
-                />
-                </Form.Group>
-                <MDBBtn type="button" onClick={handleFormSubmit} className="btn btn btn-rounded">Submit</MDBBtn>
-              </Form>
-              </MDBCardText>
-            </MDBCardBody>
-          </MDBCard>
-        </MDBCol>
-      </MDBRow>
-        <div className='text-center'>
-          {errorMessage && (
-            <div>
-              <h4 className="error-text">{errorMessage}</h4>
-            </div>
-          )}
-        </div>
+      <Row>
+        <Col className="d-flex align-items-center justify-content-center">
+          <Card className="mw-75 mt-4 shadow p-3 mb-5 bg-white rounded" id='contact-card'>
+            <Card.Body style={{ backgroundColor: '#D6E7EF' }}>
+              <Card.Title className='text-center'>Contact Me</Card.Title>
+              <Card.Text className='text-center'>
+                Please feel free to reach out by submitting some information below.
+              </Card.Text>
+                <Form className="form">
+                  <Form.Group className="mb-3" controlId="formGroupName">
+                  <Form.Control
+                    value={name}
+                    name="name"
+                    onChange={handleInputChange}
+                    onBlur={handleClickingOut}
+                    type="text"
+                    placeholder="Name"
+                  />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formGroupEmail">
+                  <Form.Control
+                    value={email}
+                    name="email"
+                    onChange={handleInputChange}
+                    onBlur={handleClickingOut}
+                    type="email"
+                    placeholder="Email"
+                  />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formGroupMessage">
+                  <Form.Control
+                    value={message}
+                    name="message"
+                    onChange={handleInputChange}
+                    onBlur={handleClickingOut}
+                    as="textarea" rows={6}
+                    placeholder="Message"
+                  />
+                  </Form.Group>
+                  <div className='text-center'>
+                    <Button type="button" onClick={handleFormSubmit} variant="secondary">Submit
+                    </Button>
+                  </div>
+                </Form>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+          <br />
+          <div className='text-center'>
+            {errorMessage && (
+              <div>
+                <h5 className="error-text">{errorMessage}</h5>
+              </div>
+            )}
+          </div>
     </Container> 
            
   );

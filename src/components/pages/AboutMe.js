@@ -1,46 +1,76 @@
+import '../style.css';
 import welcomeimage from "../../images/welcome-image.png";
-import { MDBAccordion, MDBAccordionItem, MDBIcon } from 'mdb-react-ui-kit';
-import { MDBCard, MDBCardBody, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 export default function About() {
   return (
-    <div >
-      <div className="d-flex align-items-center justify-content-center ">
-        <img src={welcomeimage} alt="welcome" />
-      </div>
-
-      <MDBRow >
-        <br/>
-        <MDBCol className="d-flex align-items-center justify-content-center">
-          <MDBCard className="shadow-5 w-50 mt-4" >
-            <MDBCardBody>
-              <MDBCardText>
-                <h3>
-                  Welcome to my portfolio, where I showcase my projects and let you get a sense of who I am. While I have a couple of years worth of experience in web / mobile configuration and graphic design for a family-run business, I recently started on the path to becoming a full stack web developer. 
-                </h3>
-              </MDBCardText>
-              <MDBAccordion  initialActive={1}>
-                <MDBAccordionItem collapseId={1} headerTitle={<><MDBIcon fas icon="fas fa-laptop-code" /> &nbsp; Technical</>}>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                </MDBAccordionItem>
-                <MDBAccordionItem collapseId={2} headerTitle={<><MDBIcon fas icon="fas fa-palette" /> &nbsp; Creative</>}>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt l
-                </MDBAccordionItem>
-                <MDBAccordionItem collapseId={3} headerTitle={<><MDBIcon fas icon="fas fa-book-open" /> &nbsp; Dedicated</>}>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt 
-                </MDBAccordionItem>
-              </MDBAccordion>
-            </MDBCardBody>
-          </MDBCard>
-        </MDBCol>
-        <br />
-      </MDBRow>
-
-      <h4 className="d-flex align-items-center justify-content-center p-5">
-      Welcome to my portfolio, where I showcase my projects and let you get a sense of who I am. While I have a couple of years worth of experience in web / mobile configuration and graphic design for a family-run business, I recently started on the path to becoming a full stack web developer.
-      </h4>
+    <div id='about-section'>
+      <Row>
+        <Col className='col-sm-12 col-md-8 mx-auto'>
+          <Card className='about-card shadow p-3 mb-5 bg-white rounded'>
+            <Card.Body className="about-card">
+              <div className='d-flex align-items-center justify-content-center'>
+                <img src={welcomeimage} alt="Hi there! I'm Shannon. So glad to have you here" id='welcome-image'/>
+              </div>
+              <Card.Text>
+                <p>
+                  Welcome to my portfolio, where you can view my projects and get to know me a little. Over the past few years, I discovered my passion for web / mobile configuration and graphic design while working on a family-run business. It started as a hobby that I did on the side since I had a full time career as a Medical Lab Scientist. With hopes of a career change and a desire to receive structured training, I started on the path to become a full stack developer. 
+                  </p>
+                  <p>
+                  Over 7 years in the healthcare laboratory setting not only shaped me as a professional, but it helped me realize my skills. Not surprisingly, the same skills that led to my successful laboratory career are the same skills needed in web development.
+                </p>
+                <p>
+                  Focus, attention to detail, and a dedication to providing the highest quality results possible are among my most valued. I'm excited to transfer these skills to my new career so that I can be a part of creating exceptional work. Thank you for taking the time to view my portfolio and I hope we have the opportunity to work together in the future. 
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      <Row>
+        <Col className='d-flex justify-content-center'>
+          <Card className='about-mini-cards shadow p-3 mb-5 bg-white rounded' border="light" style={{ width: '18rem' }}>
+            <Card.Body>
+              <Card.Text>
+              <i className='fas fa-laptop-code fa-3x about-icons' style={{ color: '#094472' }}></i><br/>
+                Technical Aptitude<br/>JavaScript<br/>HTML / CSS<br/>React.js
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col className='d-flex justify-content-center'>
+          <Card className='about-mini-cards shadow p-3 mb-5 bg-white rounded' border="light" style={{ width: '18rem' }}>
+            <Card.Body>
+              <Card.Text>
+              <i className="fas fa-palette fa-3x" style={{ color: '#094472' }}></i><br/><br/>
+                UX / UI<br/>Graphic Design<br/>Branding<br/>Figma
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col className='d-flex justify-content-center'>
+          <Card className='about-mini-cards shadow p-3 mb-5 bg-white rounded' border="light" style={{ width: '18rem' }}>
+            <Card.Body>
+              <Card.Text>
+              <i className="fas fa-users fa-3x" style={{ color: '#094472' }}></i><br/><br/>
+                Agile Methodology<br/>Team Collaboration<br/>Git Version Control<br/>Independent Contributor
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col className='d-flex justify-content-center'>
+          <Card className='about-mini-cards shadow p-3 mb-5 bg-white rounded' border="light" style={{ width: '18rem' }}>
+            <Card.Body>
+              <Card.Text>
+              <i className="fas fa-hand-holding-heart fa-3x" style={{ color: '#094472' }}></i><br/><br/>
+                Client-Centric<br/>Lifelong Learner<br/>Goal-Oriented<br/>Value-Driven
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </div>
   );
 };
