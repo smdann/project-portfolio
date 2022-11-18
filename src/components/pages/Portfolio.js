@@ -58,7 +58,7 @@ export default function Portfolio() {
 
   return (
     <Container>
-      <h1 className="portfolio-header">Project Portfolio</h1>
+      <h2 className="portfolio-header">Project Portfolio</h2>
       <h4>Here are some of my favorite projects I've worked on so far.</h4>
       <p>Visit the links to view the live website or GitHub repository.</p>
       <br />

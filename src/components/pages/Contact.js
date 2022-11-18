@@ -89,13 +89,13 @@ export default function Contact() {
 
   return (
     <Container>
+      <h2 className='text-center'>Contact Me</h2>
       <Row>
         <Col className="d-flex align-items-center justify-content-center">
           <Card className="mw-75 mt-4 shadow p-3 mb-5 bg-white rounded" id='contact-card'>
             <Card.Body style={{ backgroundColor: '#D6E7EF' }}>
-              <Card.Title className='text-center'>Contact Me</Card.Title>
               <Card.Text className='text-center'>
-                Please feel free to reach out by submitting some information below.
+                Please provide some information below and I will be in touch shortly.
               </Card.Text>
                 <Form className="form">
                   <Form.Group className="mb-3" controlId="formGroupName">
@@ -133,18 +133,19 @@ export default function Contact() {
                     </Button>
                   </div>
                 </Form>
+                <br/>
+                <div className='text-center'>
+                  {errorMessage && (
+                    <div>
+                      <h5 className="error-text">{errorMessage}</h5>
+                    </div>
+                  )}
+                </div>
               </Card.Body>
             </Card>
           </Col>
         </Row>
-          <br />
-          <div className='text-center'>
-            {errorMessage && (
-              <div>
-                <h5 className="error-text">{errorMessage}</h5>
-              </div>
-            )}
-          </div>
+      <br/>
     </Container> 
            
   );
