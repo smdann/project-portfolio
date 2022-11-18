@@ -38,9 +38,11 @@ A contact section has a form with input fields for a name, an email address, and
 
 Lastly, a resume section lists my front-end and back-end technology proficiencies. A PDF version of my resume is also available for download.
 
-[Deployed Application]()
+[Deployed Application](https://smdann.github.io/project-portfolio/)
 
-![Screenshot](./client/src/images/)
+![Screenshot](./src/images/portfolio-screenshot.png)
+
+![Screenshot](./src/images/projects-screenshot.png)
 
 ## License 
 
