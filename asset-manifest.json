@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/smdann/project-portfolio/static/css/main.5a2ecbab.css",
+    "main.js": "/smdann/project-portfolio/static/js/main.9189e43d.js",
+    "static/js/787.51972ac4.chunk.js": "/smdann/project-portfolio/static/js/787.51972ac4.chunk.js",
+    "static/media/fa-solid-900.ttf": "/smdann/project-portfolio/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
+    "static/media/portfolio-banner.png": "/smdann/project-portfolio/static/media/portfolio-banner.39a237ca9b935f3cd3fb.png",
+    "static/media/fa-brands-400.ttf": "/smdann/project-portfolio/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
+    "static/media/mmhd-residences.png": "/smdann/project-portfolio/static/media/mmhd-residences.f57e1598994f5d205918.png",
+    "static/media/fa-solid-900.woff2": "/smdann/project-portfolio/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
+    "static/media/team-roster-generator.png": "/smdann/project-portfolio/static/media/team-roster-generator.4cc1cbde4161160a21f4.png",
+    "static/media/fa-brands-400.woff2": "/smdann/project-portfolio/static/media/fa-brands-400.e1a247a5ef41e1975742.woff2",
+    "static/media/weather-dashboard.png": "/smdann/project-portfolio/static/media/weather-dashboard.8c22de1767c83915d15d.png",
+    "static/media/finding-fido.png": "/smdann/project-portfolio/static/media/finding-fido.ae1eb8bccc4fc4b679ad.png",
+    "static/media/welcome-image.png": "/smdann/project-portfolio/static/media/welcome-image.ff6cc2472a9683b4c7d2.png",
+    "static/media/developer-blog-site.png": "/smdann/project-portfolio/static/media/developer-blog-site.f2c4970eec1ae1b2da59.png",
+    "static/media/fa-regular-400.ttf": "/smdann/project-portfolio/static/media/fa-regular-400.abf801b7acb6705a15ad.ttf",
+    "static/media/Shannon-Dann-Resume-2022.pdf": "/smdann/project-portfolio/static/media/Shannon-Dann-Resume-2022.a2a95ff7e0fff4df4e62.pdf",
+    "static/media/fa-regular-400.woff2": "/smdann/project-portfolio/static/media/fa-regular-400.639d2000c1ece92eaec8.woff2",
+    "static/media/notes-express.png": "/smdann/project-portfolio/static/media/notes-express.d8cb4720dfe29dcdca96.png",
+    "static/media/fa-v4compatibility.ttf": "/smdann/project-portfolio/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
+    "static/media/fa-v4compatibility.woff2": "/smdann/project-portfolio/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
+    "index.html": "/smdann/project-portfolio/index.html",
+    "main.5a2ecbab.css.map": "/smdann/project-portfolio/static/css/main.5a2ecbab.css.map",
+    "main.9189e43d.js.map": "/smdann/project-portfolio/static/js/main.9189e43d.js.map",
+    "787.51972ac4.chunk.js.map": "/smdann/project-portfolio/static/js/787.51972ac4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a2ecbab.css",
+    "static/js/main.9189e43d.js"
+  ]
+}
