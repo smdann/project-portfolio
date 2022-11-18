@@ -5,12 +5,12 @@ import resume from '../../images/Shannon-Dann-Resume-2022.pdf'
 export default function Resume() {
   return (
     <div>
-      <h2 className='text-center'>Resume</h2>
-      <h4 className='text-center'>
+      <h2 className='text-center'>Resume</h2><br/>
+      <h5 className='text-center'>
         <a href={resume} className='text-decoration-none'>
           <i className='fas fa-file-download text-decoration-none' style={{ color: '#1F71A2' }}></i> Download
-        </a> 
-      </h4><br/>
+        </a>  a PDF version of my resume.
+      </h5><br/>
       <SimpleGrid className='d-flex justify-content-center' bg='gray.50' columns={2}  color='gray.400' alignItems='center'>
         <Row>
           <Col >

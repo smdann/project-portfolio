@@ -16,6 +16,11 @@
   color: white;
 }
 
+/* Navigation Bar */
+#navbar-items {
+  font-weight: 500;
+}
+
 /* Page Rendering Section */
 .page-area {
   padding: 2rem;

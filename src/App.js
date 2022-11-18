@@ -8,8 +8,8 @@ function App() {
     <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs">
       
-      <div className='p-5 text-center bg-image' id='banner'>
-        <h1 className='mb-3' id='banner-text'>Shannon Dann</h1>
+      <div className='p-5 bg-image' id='banner'>
+        <h1 className='mb-3 text-center' id='banner-text'>Shannon Dann</h1>
       </div>
       <Navigation />
         

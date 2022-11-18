@@ -2,6 +2,7 @@
   "name": "20-react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/smdann/project-portfolio",
   "dependencies": {
     "@chakra-ui/react": "^2.3.7",
     "@emotion/react": "^11.10.5",
@@ -21,6 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

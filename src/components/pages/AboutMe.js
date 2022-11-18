@@ -16,13 +16,13 @@ export default function About() {
               </div>
               <Card.Text>
                 <p>
-                  Welcome to my portfolio, where you can view my projects and get to know me a little. Over the past few years, I discovered my passion for web / mobile configuration and graphic design while working on a family-run business. It started as a hobby that I did on the side since I had a full time career as a Medical Lab Scientist. With hopes of a career change and a desire to receive structured training, I started on the path to become a full stack developer. 
-                  </p>
-                  <p>
-                  Over 7 years in the healthcare laboratory setting not only shaped me as a professional, but it helped me realize my skills. To my surprise, the same skills that led to my successful laboratory career are the same skills needed in web development.
+                  Welcome to my portfolio, where you can view my projects and get to know me a little. Over the past few years, I discovered my passion for web / mobile configuration and graphic design while working on a family-run business. It started as a hobby that I did on the side since I had a full-time career as a Medical Lab Scientist. With hopes of a career change and a desire to receive structured training, I started on the path to becoming a full-stack developer. 
                 </p>
                 <p>
-                  Focus, attention to detail, and a dedication to providing the highest quality results possible are among my most valued. I'm excited to transfer these skills to my new career so that I can be a part of creating exceptional work. Thank you for taking the time to view my portfolio and I hope we have the opportunity to work together in the future. 
+                  Seven years in the healthcare laboratory setting shaped me as a professional and helped me realize my skills. To my surprise, the same skills that led to my successful laboratory career are also skills needed in web development.
+                </p>
+                <p>
+                  Focus, attention to detail, and a dedication to providing the highest quality results possible are among my most valued. I'm excited to transfer these skills to my new career so that I can be a part of creating exceptional work. Thank you for taking the time to view my portfolio, and I hope we have the opportunity to work together in the future.
                 </p>
               </Card.Text>
             </Card.Body>

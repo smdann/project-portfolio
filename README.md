@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Shannon's Project Portfolio
 
-In the project directory, you can run:
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-### `npm start`
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+My project portfolio is where you can learn a little about me, view my work, contact me, and view my resume. This single-page web application was built with React. Features of React Bootstrap, Material Design for Bootstrap, and Chakra UI were used for the layout and design.
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-### `npm run build`
+## Installation 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Installation is not required as this application has been deployed to a live URL. To see it in action, please visit the link below.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Usage 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The purpse of this application is to provide a place to showcase my work to potential employers. It consists of 4 main sections: 
 
-### `npm run eject`
+An about me section gives a brief bio about my career and aspirations, as well as a highlight of my skills.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The portfolio section displays 6 of my projects.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Each project has an image, a title, a link to the deployed website, and a link to the GitHub repository.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+A contact section has a form with input fields for a name, an email address, and a message.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* Form validation requires that each field be filled out upon submission and the email input requires a valid email adress.
 
-## Learn More
+Lastly, a resume section lists my front-end and back-end technology proficiencies. A PDF version of my resume is also available for download.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Deployed Application]()
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot](./client/src/images/)
 
-### Code Splitting
+## License 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Shannon's Project Portfolio is available under the MIT license.
 
-### Analyzing the Bundle Size
+Please see [LICENSE](./LICENSE) for the full details.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Contributing 
 
-### Making a Progressive Web App
+The contributors of this application have adopted the Contributor Covenant Code of Conduct. Please visit the [Code of Conduct](./CODE_OF_CONDUCT) page for details.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Tests 
 
-### Advanced Configuration
+This application doesn't have any tests at this time.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Questions 
 
-### Deployment
+Please reach out via the the link below with any additional questions. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[GitHub](https://github.com/smdann)
