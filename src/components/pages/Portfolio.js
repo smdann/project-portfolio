@@ -1,6 +1,3 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Project from '../Project';
 import image1 from '../../images/finding-fido.png';
 import image2 from '../../images/mmhd-residences.png';
@@ -8,6 +5,7 @@ import image3 from '../../images/developer-blog-site.png';
 import image4 from '../../images/team-roster-generator.png';
 import image5 from '../../images/weather-dashboard.png';
 import image6 from '../../images/notes-express.png';
+import { Col, Row, Container } from 'react-bootstrap';
 
 export default function Portfolio() {
 
@@ -63,9 +61,10 @@ export default function Portfolio() {
       <p>Visit the links to view the live website or GitHub repository.</p>
       <br />
       <Row>
-        {projectData.map((project) => (
+        {projectData.map(project => (
           <Col md="12" lg="4">
-          <Project key={project.projectNumber} image={project.image} name={project.projectName} deployedLink={project.deployedLink} githubLink={project.githubLink} />
+          <Project 
+            key={project.projectNumber} image={project.image} name={project.projectName} deployedLink={project.deployedLink} githubLink={project.githubLink} />
           </Col>
         ))}
       </Row>

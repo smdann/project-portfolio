@@ -33,3 +33,5 @@ export default function Navigation() {
     </div>
   );
 }
+
+console.log(document.querySelectorAll(" p * div "))

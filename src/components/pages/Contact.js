@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { Col, Row, Container, Card, Form, Button } from 'react-bootstrap';
 import { validateEmail } from './utils/helpers';
 
 export default function Contact() {

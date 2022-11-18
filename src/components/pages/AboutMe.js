@@ -1,8 +1,7 @@
 import '../style.css';
+import { Col, Row, Card } from 'react-bootstrap';
 import welcomeimage from "../../images/welcome-image.png";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+
 
 export default function About() {
   return (
@@ -36,7 +35,7 @@ export default function About() {
           <Card className='about-mini-cards shadow p-3 mb-5 bg-white rounded' border="light" style={{ width: '18rem' }}>
             <Card.Body>
               <Card.Text>
-              <i className='fas fa-laptop-code fa-3x about-icons' style={{ color: '#094472' }}></i><br/>
+              <i className='fas fa-laptop-code fa-3x about-icons' style={{ color: '#094472' }}></i><br/><br/>
                 Technical Aptitude<br/>JavaScript<br/>HTML / CSS<br/>React.js
               </Card.Text>
             </Card.Body>
