@@ -60,6 +60,14 @@
   margin: 1rem;
 }
 
+#portfolio-i {
+  border-radius: 10px;
+}
+
+#portfolio-i:hover {
+  background-color: #D6E7EF;
+}
+
 /* Contact Page */
 #contact-card {
   border: 0

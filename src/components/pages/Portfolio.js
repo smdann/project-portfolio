@@ -63,8 +63,13 @@ export default function Portfolio() {
       <Row>
         {projectData.map(project => (
           <Col md="12" lg="4">
-          <Project 
-            key={project.projectNumber} image={project.image} name={project.projectName} deployedLink={project.deployedLink} githubLink={project.githubLink} />
+            <Project 
+              key={project.projectNumber} 
+              image={project.image} 
+              name={project.projectName} 
+              deployedLink={project.deployedLink} 
+              githubLink={project.githubLink} 
+            />
           </Col>
         ))}
       </Row>

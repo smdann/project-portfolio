@@ -7,11 +7,11 @@ export default function Project(props) {
       <Card.Body className='text-center'>
         <h4 style={{ color: '#1F71A2' }}>{props.name}</h4>
         <a href={props.deployedLink} className='portfolio-icons'>
-          <i className="fas fa-external-link-alt fa-3x text-decoration-none" style={{ color: '#1F71A2' }}>
+          <i className="fas fa-external-link-alt fa-3x text-decoration-none" id='portfolio-i' style={{ color: '#1F71A2' }}>
           </i>
         </a>
         <a href={props.githubLink} className='portfolio-icons'>
-          <i className="fab fa-github fa-3x text-decoration-none" style={{ color: '#1F71A2' }}>
+          <i className="fab fa-github fa-3x text-decoration-none" id='portfolio-i' style={{ color: '#1F71A2' }}>
           </i>
         </a>
       </Card.Body>
