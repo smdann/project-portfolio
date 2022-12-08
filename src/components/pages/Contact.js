@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Col, Row, Container, Card, Form, Button } from 'react-bootstrap';
 import { validateEmail } from './utils/helpers';
+// import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+  // const form = useRef();
 
   // Puts the form fields and error message into state
   const [name, setName] = useState('')
@@ -80,6 +82,13 @@ export default function Contact() {
       setMessage('');
       return;
     }
+    // Sends form to email provider
+  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
   };
 
   return (
@@ -92,7 +101,7 @@ export default function Contact() {
               <Card.Text className='text-center'>
                 Please provide some information below and I will be in touch shortly.
               </Card.Text>
-                <Form className="form">
+                <Form className="form" onSubmit={handleFormSubmit}>
                   <Form.Group className="mb-3" controlId="formGroupName">
                   <Form.Control
                     value={name}
@@ -124,7 +133,7 @@ export default function Contact() {
                   />
                   </Form.Group>
                   <div className='text-center'>
-                    <Button type="button" onClick={handleFormSubmit} variant="secondary">Submit
+                    <Button type="button" onClick={handleFormSubmit} value="Send" variant="secondary">Submit
                     </Button>
                   </div>
                 </Form>

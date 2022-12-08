@@ -5,6 +5,7 @@
   "homepage": "https://smdann.github.io/project-portfolio/",
   "dependencies": {
     "@chakra-ui/react": "^2.3.7",
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fortawesome/fontawesome-free": "^6.2.0",
@@ -12,6 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.2.2",
+    "emailjs": "^4.0.1",
     "framer-motion": "^6.5.1",
     "gh-pages": "^4.0.0",
     "mdb-react-ui-kit": "^5.0.0",

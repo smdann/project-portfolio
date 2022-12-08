@@ -1,10 +1,10 @@
 import Project from '../Project';
-import image1 from '../../images/finding-fido.png';
-import image2 from '../../images/mmhd-residences.png';
-import image3 from '../../images/developer-blog-site.png';
-import image4 from '../../images/team-roster-generator.png';
+import image1 from '../../images/indepth-agronomy.png';
+import image2 from '../../images/finding-fido.png';
+import image3 from '../../images/mmhd-residences.png';
+import image4 from '../../images/conceal-and-carry-mn.png';
 import image5 from '../../images/weather-dashboard.png';
-import image6 from '../../images/notes-express.png';
+import image6 from '../../images/team-roster-generator.png';
 import { Col, Row, Container } from 'react-bootstrap';
 
 export default function Portfolio() {
@@ -12,31 +12,31 @@ export default function Portfolio() {
   const projectData = [ 
     {
       projectNumber: 1,
-      projectName: 'Finding Fido',
+      projectName: 'InDepth Agronomy',
       image: image1,
+      deployedLink: 'https://indepth-agronomy-production.up.railway.app/',
+      githubLink: 'https://github.com/hoffh-5334/indepth-agronomy'
+    },
+    {
+      projectNumber: 2,
+      projectName: 'Finding Fido',
+      image: image2,
       deployedLink: 'https://hoffh-5334.github.io/finding-fido/',
       githubLink: 'https://github.com/hoffh-5334/finding-fido'
     },
     {
-      projectNumber: 2,
+      projectNumber: 3,
       projectName: 'MMHD Residences',
-      image: image2,
+      image: image3,
       deployedLink: 'https://propertymanager-production.up.railway.app/',
       githubLink: 'https://github.com/hoffh-5334/propertyManager'
     },
     {
-      projectNumber: 3,
-      projectName: 'Tech Blog',
-      image: image3,
-      deployedLink: 'https://enigmatic-savannah-78345.herokuapp.com/',
-      githubLink: 'https://github.com/smdann/developer-blog-site'
-    },
-    {
       projectNumber: 4,
-      projectName: 'Team Roster Generator',
+      projectName: 'Conceal and Carry MN',
       image: image4,
-      deployedLink: 'https://drive.google.com/file/d/1l__u6dmc67J-G2aO0Ilu-7XdHAw4gZmD/view',
-      githubLink: 'https://github.com/smdann/team-roster-generator'
+      deployedLink: 'https://cfia-mn.com/',
+      githubLink: ''
     },
     {
       projectNumber: 5,
@@ -47,10 +47,10 @@ export default function Portfolio() {
     },
     {
       projectNumber: 6,
-      projectName: 'Notes Express',
+      projectName: 'Team Roster Generator',
       image: image6,
-      deployedLink: 'https://notes-express-production.up.railway.app/',
-      githubLink: 'https://github.com/smdann/notes-express'
+      deployedLink: 'https://drive.google.com/file/d/1l__u6dmc67J-G2aO0Ilu-7XdHAw4gZmD/view',
+      githubLink: 'https://github.com/smdann/team-roster-generator'
     }
   ];
 
@@ -73,6 +73,8 @@ export default function Portfolio() {
           </Col>
         ))}
       </Row>
+      <p>Note: Conceal and Carry MN is a family-run business and is not on GitHub.</p>
+      <br/>
       <br/>
     </Container>
   );
